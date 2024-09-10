@@ -1,0 +1,5 @@
+Anchor tag
+<!-- it is used to add links on page -->
+<a href="link">This is a link</a>
+<tag attribute=value>Content</tag>
+<tag attribute=value anothervalue=value>Content</tag>

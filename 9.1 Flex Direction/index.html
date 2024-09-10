@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-direction: column;
+
+    }
+
+    /* 
+Select all the elements that are the direct
+children of the .container class.
+    */
+
+    /* There are various ways to target all the children of container div */
+    /* Method 1 - Per isme ek issue hai agr or bhi div honge joki grand child honge to waha per issue ayega */
+    /* .container div { 
+      flex-basis: 100px;
+    } */
+    /* Method 2 - yaha per wo dikkat solve ho gyi sare immediate child div select ho jaenge*/
+    .container > div{
+      flex-basis: 100px;
+    }
+    /* Method 3 - yaha per humne sare childs ko select kar liya container ke - but ek issue hai agr koi or element bhi hoga rather than div wo bhi target ho jaega.*/
+    /* .container > *{
+      flex-basis: 100px;
+    } */
+
+    .red {background-color: #eb4d4b;}
+    .orange {background-color: #f0932b;}
+    .yellow {background-color: #f6e58d;}
+    .green {background-color: #6ab04c;}
+    .blue {background-color: #4834d4;}
+    .indigo {background-color: #30336b;}
+    .purple {background-color: #eb4d4b;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+  
+</body>
+
+</html>

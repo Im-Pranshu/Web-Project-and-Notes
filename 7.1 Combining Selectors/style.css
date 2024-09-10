@@ -1,0 +1,41 @@
+/* Write your code here: */
+h1, h2{
+    color: blueviolet;
+}
+
+/* Child selectors */
+.box > p {
+    /* Same code */
+/* .box > .done{*/
+    color: firebrick;
+}
+
+/* descendent selectors */
+.box li {
+    color: blue;
+}
+
+/* or */
+/* .box .list {
+    color: blue;
+} */
+
+/* chaining selector */
+/* li.done{ */
+li.done#done.okay{/*chain selector*/
+    color: seagreen;
+}
+li.done#okay{
+    color: aqua;
+    background-color: black;
+}
+
+/* Combining Combiners */
+ul p.done {
+    font-size: 1rem;
+}
+
+/* also be done using child selectors */
+/* ul > p {
+    font-size: 0.5rem;
+} */

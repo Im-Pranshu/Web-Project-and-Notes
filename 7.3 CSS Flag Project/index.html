@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* main red rectangle */
+    .flag{
+      background-color: red;
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+    /* main blue rectangle */
+    .flag>div{
+      background-color: #1a2864;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 150px;/*25% of 600 we can also write 25% instead*/
+    }
+
+    /* White Cirlce */
+    /*it can also be witten as :-
+    ".flag>div>div" */
+    .flag div>div{ 
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      /*900px iske parenet ki width hai 
+      aur 100px circle ki radius hai to
+      dono mila ke 450px ho gya joki 900
+      ka 50% hai tabhi to centre me ayega.*/
+      left: 350px;
+      /*same uper radius wale logic se.*/
+      top: 50px;
+    }
+    /* common for all p text */
+    p{
+      margin: 0;
+      font-size: 5rem;
+      text-align: center;
+      color: white;
+    }
+    /* text inside circle */
+    .flag div>div>p{
+      color: black;
+    }
+    
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of <br>Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

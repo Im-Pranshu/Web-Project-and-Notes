@@ -1,0 +1,24 @@
+h1 {
+  color: greenyellow;
+  text-align: center;
+}
+
+li{
+  color: darkblue;
+  font-size: 22px;
+  list-style: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button{
+  margin: 0px auto 0px auto;
+  padding: 10px;
+}
+
+ol{
+  margin: 3% 40% 3% 40%;
+}

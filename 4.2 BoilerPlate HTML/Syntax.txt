@@ -1,0 +1,21 @@
+// Use the analogy of hamburger to understand it.
+<!DOCTYPE html>  // Tells about the html version which are defined below
+<html lang="en"> // Root of the document , all tags and data will be inside this , lang is language of the text content in the elements and as if we are going to write our website in english then we will write lang = "en" other notations are there for other languages. and this line of code is like top of the bun of burger and things inside this are material of the burger
+  <head> //all important info about website is placed and not going to be displayed to the user. but here not any content is included.
+    <meta charset="UTF-8"> // it ensures that characters used inside the web gets displayed correctly.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- how the website should be displayed relative to the screen that it's been rended on , and also tells the browser that how to display website when it first opens. -->
+    <title>HTML 5 Boilerplate</title> // it is displayed on the tab bar when its opened in the browser.
+  </head>
+  <body> 
+	  //all the content is placed inside this body tag.
+  </body>
+</html> bottom bun of the burger inside which all the stuff is placed nothing will go outside of this.
+
+
+Version    |    Year
+HTML       |  1991
+HTML+      |  1993
+HTML2.0    |  1995
+HTML3.2    |  1997
+HTML4      |  1999
+HTML5      |  2012

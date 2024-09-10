@@ -1,0 +1,57 @@
+-> What is css selector ?
+-> Its a part that selects html in order to apply whichever rules go in bw these curly braces
+eg: 
+h1{
+    color:blue;
+}
+now here how we would get to know that which part of html will be blue so this html selector tells about this. so we're targetting h1 then all rules will be applied to all h1.
+it can select any tag.
+
+2.. another type of selector is "Class Selector"
+class -> an attribute tha can be added to any html element. It's used for grouping elements in ur html file to apply same rule to all of them.
+eg;
+<h2 class="red-text">Red</h2> -> this will use the rules defined  for style in red-text and will make h2 red
+<h2>Red</h2> -> This h2 will be in default since no class is specified.
+
+defined inside style.css ->
+.red-text{ -> it starts with "." and after that without space class name is written.
+    color:red;    -> css rules
+}
+
+-> if we have multiple elements using same class then it will also apply the rules doesn't matter about type of element.
+
+3.. "ID Selector"
+->has own special symbol(pound sign or hashtag(#)) and no space after it and name of ID
+-> There should one particular id for the 1 one element in a file , cant be used with multiple html elements like class selector.
+eg:
+<h2 id="main">Red</h2> -> this will use the rules defined  for style in main(ID) and will make h2 red
+<h2>Red</h2> -> This h2 will be in default since no ID is specified.
+
+defined inside style.css ->
+#main{ -> it starts with "#" and after that without space ID name is written.
+    color:red;   -> css rules
+}
+
+4.. "Attribute Selector"
+-> used to select elements that have particular attributes or particular attribute values.
+
+syntax- htmlElement[attributeValue]{
+            css code;
+        }
+
+eg:
+
+p[draggable]{ it starts with "p(paragraph element)" and after that inside [] attribute value is written. and this line means select all paragraph elements with attribute draggable.
+    color:red;
+}
+we can also write like this to increase the productivity of the code to exactly do what i want
+p[draggable="true"]{
+    css code;
+}
+
+5..  "Universal Selector"
+syntax -> written inside styles.css
+        *{
+            css code;
+        }
+-> it applies the style everywhere no matter what the id , class , attribute is .

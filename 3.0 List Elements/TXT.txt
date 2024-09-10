@@ -1,0 +1,23 @@
+two types of a list
+1.unordered
+2.ordered
+
+unordered list 
+defined by 
+<ul>
+	//list items
+	<li>item1</li>
+	<li>item1</li> 
+	<li>item1</li>
+</ul>
+//o/p will be in bullet points
+
+ordered list :
+defined by 
+<ol>
+	//list items
+	<li>item1</li>
+	<li>item1</li> 
+	<li>item1</li>
+</ol>
+//o/p will be in numbering

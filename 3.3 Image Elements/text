@@ -1,0 +1,3 @@
+image tag is used to add images
+<img src="url" alt="describe the scene of the image so that user can understand it"/>
+its also a void element like <hr> <br>

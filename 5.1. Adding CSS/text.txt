@@ -1,0 +1,45 @@
+<!-- 3 methods to adding CSS in html -->
+1. Inline : targets 1 element
+2. Internal : targets 1 webpage
+3. External : targets 1 website(Styles.css) or multiple webpages.
+
+1. Inline   : <tag style="css"/>  -> it is written in same line as particular html element/tag.
+eg: <html style="background:blue">
+    </html>        ^         ^
+                Property   Value
+// useful when we want to add css style just for a single element on html page.
+// should not use in entire document (not recommended)
+
+2. Internal : <style>css</style>
+eg:
+<html>
+    <head>
+        <style>
+            html{ // this(html) is a selector and css is written inside curly braces after this.
+                background:red;
+            }
+        </style>
+    </head>
+</html>
+// Can be applied aywhere in the our html document.
+// useful for applying it to one html document. can't be used in multipaging.
+
+3. External : <link href="style.css"/>
+// main difference is that it completes written in a separate file(styles.css). 
+// used in the case of multipaged website.
+
+//Defining a External css.
+eg : Styles.ccs // file name.
+html{
+    background:green;
+}
+
+//now to add External css style in html file we will add following code inside the head tag.
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="./styles.css"
+        />
+    </head>
+</html>

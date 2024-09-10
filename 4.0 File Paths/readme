@@ -1,0 +1,6 @@
+../ is used to acces a directory before current directory 
+./ is used to look for a file within the folder. works 100%
+although we can also access within the folder without using ./ but sometimes it won't work so its a better practice to use it.
+file paths are f two types 
+1. relative path - which means not from but related to current folder or directory.
+2. absolute path - start from the root folder and ends to file destination.
