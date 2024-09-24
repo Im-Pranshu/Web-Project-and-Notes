@@ -1,0 +1,31 @@
+<!-- The Default Width of Block Level Boxes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* If you don’t declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward. But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal. */
+        .container{
+            display: inline;
+            /* position: absolute; */
+            border: 2px solid black;
+            /* width: 100%; */
+            /* float: right; */
+            /* padding: 20px; */
+        }
+        p{
+            display: inline;
+            background-color: aqua;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem minima quo dicta impedit at atque. Quod temporibus molestias animi deserunt blanditiis error quam quos laudantium rem? Explicabo quisquam soluta itaque nemo necessitatibus, aperiam quis ipsa vero, corrupti error neque suscipit optio ratione quos laudantium? Sed, assumenda! In vitae dolore doloribus?</p>
+    </div>
+</body>
+</html>
