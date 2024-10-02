@@ -9,17 +9,18 @@
 
         /* If you don’t declare a width, and the box has static or relative positioning, the width will remain 100% in width and the padding and border will push inwards instead of outward. But if you explicitly set the width of the box to be 100%, the padding will push the box outward as normal. */
         .container{
-            display: inline;
+            box-sizing: border-box;
+            display: flex;
             /* position: absolute; */
             border: 2px solid black;
-            /* width: 100%; */
+            width: 100%;
             /* float: right; */
-            /* padding: 20px; */
+            padding: 50px;
         }
         p{
-            display: inline;
+            /* display: inline; */
             background-color: aqua;
-            margin-left: 200px;
+            /* margin-left: 200px; */
         }
     </style>
 </head>
